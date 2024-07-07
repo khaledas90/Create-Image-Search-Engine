@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #399df5;
+  font-family: cursive, sans-serif, serif;
+}
+.container {
+  margin: 20px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header {
+  margin-top: 40px;
+}
+.header h1 {
+  color: #fff;
+  font-size: 47px;
+  font-weight: bold;
+}
+.forms {
+  margin-top: 13%;
+  padding: 6px;
+}
+.forms input {
+  width: 80%;
+  padding: 18px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+.forms input:focus {
+  border: 1px solid #255cbb;
+}
+.forms input:active {
+  border: 1px solid #255cbb;
+}
+.forms .Search {
+  padding: 18px;
+  width: 20%;
+  padding: 18px;
+  width: 18%;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #ffc107;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.forms button:hover {
+  color: #fff;
+  background-color: #ff6207;
+}
+.ShowMore {
+  padding: 18px;
+  width: 20%;
+  padding: 18px;
+  width: 18%;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  background-color: #ffc107;
+  margin: 10px auto;
+  display: block;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.imgResult {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.imgResult img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  display: none;
+}
+.load div {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: khaled;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load .two {
+  animation-delay: 0.3s;
+}
+.load .three {
+  animation-delay: 0.6s;
+}
+@keyframes khaled {
+  to {
+    opacity: 0.2;
+    transform: translatey(-20px);
+  }
+}
